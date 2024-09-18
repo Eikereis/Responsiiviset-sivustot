@@ -1,0 +1,193 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital@0;1&display=swap');
+
+:root{
+    --teksti: #333;
+    --tausta: #eee;
+    --teksti-vaalea: #ddd;
+    --bg-dark: #444;
+    --highlight: #87af19;
+
+}
+
+* {
+    box-sizing: border-box;
+    
+}
+
+
+
+/* Yleiskäyttö */
+
+
+
+/*vertikaalista keskittämistä*/
+.v-center {
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+}
+
+.h-right {
+    position: absolute;
+    right: 0;
+
+}
+
+.ammattitaitovaatimukset {
+    padding: 0;
+}
+
+.ammattitaitovaatimukset > li {
+    list-style-type: none;
+}
+.ammattitaitovaatimukset > li > ul {
+    border-left: var(--highlight) solid 5px;
+}
+
+.ammattitaitovaatimukset > li > ul > li {
+    padding: 0;
+    list-style-type: square;
+
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Lato", sans-serif;
+    background-color: var(--tausta);
+    color: var(--teksti);
+}
+
+/* header */
+header {
+    background-color: var(--bg-dark);
+    color: var(--teksti-vaalea);
+    padding: 10px;
+    height: 100px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    border-bottom: var(--highlight) solid 5px;
+}   
+
+header .logo{
+    float: left;
+    font-size: 2em;
+}
+
+header nav a {
+    display: inline-block;
+    font-size: 1.5em;
+    color: var(--teksti-vaalea);
+    text-decoration: none;
+    padding: 0.5em;
+}
+header nav a:hover {
+    background-color: var(--highlight);
+    color: var(--teksti);
+}
+
+.ingressi {
+    font-size: 1.2em;
+    font-style: italic;
+    line-height: 1.6em;;
+}
+.ingressi::first-letter {
+    float: left;
+    font-size: 3em;
+    line-height: 1em;
+    font-weight: bold;
+    margin-right: 0.1em;
+    margin-top: 0.1em;
+}
+
+.tietoisku {
+    font-size: 0.8em;
+    margin: 0;
+    padding: 0 0;
+}
+
+/* main-lohkon tyylit */
+main {
+    font-size: 1.5em;
+    line-height: 1.5em;
+    padding-top: 80px;
+}
+
+/* section-lohkon tyylit */
+section {
+    max-width: 900px;
+    width: 70%;
+    margin: 20px auto;
+
+}
+
+/* showcase */
+.showcase {
+    font-size: 1.5em;
+    max-width: 100%;
+    width:100%;
+    padding-top: 60px;
+    height: 300px;
+    background-color: #222;
+    
+}
+
+
+
+
+.showcase > div {
+    color: var(--teksti-vaalea);
+    max-width: 40%;
+    text-align: center;
+    margin: 0 auto;
+
+}
+
+
+
+/*table*/
+.KriteeriTable {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: var(--highlight) 2px solid;
+    font-size: 14px;
+}
+.KriteeriTable th {
+    background-color: var(--highlight);
+    padding: 10px;
+    text-align: left;
+    font-size: 1.2em;
+}
+.KriteeriTable td {
+    padding: 10px;
+    text-align: left;
+}
+.KriteeriTable tr {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    border-bottom: 1px solid var(--highlight);
+}
+.KriteeriTable th,
+.KriteeriTable td {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 1.4em;
+}
+
+.vaatimus {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.workfuckyou {
+    text-decoration: none;
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+}

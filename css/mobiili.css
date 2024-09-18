@@ -1,0 +1,115 @@
+/* Mobiili-tyylit*/
+@media only screen and (max-width: 825px){
+    /* asetetaan elementit allekkain 100% leveydelle*/
+    header,
+    header div.logo,
+    header > nav,
+    header nav a,
+    section,
+    main {
+        display: block;
+        float: none;
+        height: auto;
+        width: 100%;
+        clear:both;
+        position: relative;
+        padding: 0 5px;
+        margin: auto;
+    } 
+    header nav {
+        text-align: center;
+    }
+    header nav a {
+        padding: 5px 0;
+    }
+
+
+    .v-center, .h-right {
+        display: block;
+        position: relative;
+        transform: none;
+    }
+
+    .KriteeriTable {
+        display: block;
+        width: 100%;
+        float: none;
+        clear: both;
+        position: relative;
+        padding: 0;
+    }
+    
+    .showcase {
+        background-color: #222;
+        color: var(--teksti-vaalea);
+        max-width: 100%;
+        width:100%;
+        font-size: 1.1em;
+        padding-top: 5px 0;
+        line-height: 1.2em;
+    }
+    
+    .ingressi {
+        padding: 0 5px;;
+        font-size: 1em;
+        font-style: italic;
+        line-height: 1em;;
+    }
+    .ingressi::first-letter {
+        float: left;
+        font-size: 3em;
+        line-height: 1em;
+        font-weight: bold;
+        margin-right: 0.1em;
+        margin-top: 0.1em;
+    }
+    
+    
+    /*table*/
+    .KriteeriTable {
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        border: var(--highlight) 2px solid;
+        font-size: 14px;
+    }
+    .KriteeriTable th {
+        background-color: var(--highlight);
+        padding: 10px;
+        text-align: left;
+        font-size: 1.2em;
+    }
+    .KriteeriTable td {
+        padding: 10px;
+        text-align: left;
+    }
+    .KriteeriTable tr {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 15px;
+        border-bottom: 1px solid var(--highlight);
+    }
+    .KriteeriTable th,
+    .KriteeriTable td {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+        font-size: 1.4em;
+    }
+
+    .vaatimus {
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+    .workfuckyou {
+        text-decoration: none;
+        list-style-type: none;
+        padding-left: 0;
+        margin: 0;
+    }
+
+    .pitkatext {
+        font-size: 0.3em;
+    }
+}
